@@ -28,5 +28,12 @@ int main(){
     vector<int> arr = {5,1,2,3,4,6};
     Node* head = convertToLL(arr);
     cout<<head->data<<"\n";
+     // linked list traversal
+
+    Node* temp = head;
+    while(temp!= nullptr){
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
     return 0; 
 }
